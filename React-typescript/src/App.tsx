@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import List from "./components/List"
 
 // Using a ? after defining a property in an interface signifies that the property is optional
 interface IState {
@@ -33,11 +34,12 @@ function App() {
 // If you type people. , it shows the defined types that can be mapped. If the type is undefined previously, it will throw an error 
 
 people.map(person => {
-  person.age 
+  person.name
 })
 	return (
 		<div className="app">
 			<h1>Hall of Fame</h1>
+      <List people={people}/>
 		</div>
 	);
 }
